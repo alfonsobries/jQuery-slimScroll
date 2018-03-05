@@ -417,7 +417,7 @@
           clearTimeout(queueHide);
 
           // when bar reached top or bottom
-          if (percentScroll == ~~percentScroll)
+          if (percentScroll == ~~percentScroll || percentScroll>=1)
           {
             //release wheel
             releaseScroll = o.allowPageScroll;
